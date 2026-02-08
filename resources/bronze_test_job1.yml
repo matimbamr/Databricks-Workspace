@@ -1,0 +1,24 @@
+resources:
+  jobs:
+    simple_remote_job:
+      name: simple_remote_job
+      tasks:
+        - task_key: remote_tak_on_job
+          email_notifications: {}
+          environment_key: Default
+          notebook_task:
+            notebook_path: /Workspace/Users/matimba.mr@gmail.com/.bundle/bundle_pattern_one/community_matimba/files/ds-databricks/Core/Bronze/bronze_company_info
+            source: WORKSPACE
+          run_if: ALL_SUCCESS
+          timeout_seconds: 0
+          webhook_notifications: {}
+      environments:
+        - environment_key: Default
+          spec:
+            environment_version: "4"
+      max_concurrent_runs: 1
+      performance_target: PERFORMANCE_OPTIMIZED
+      queue:
+        enabled: true
+      timeout_seconds: 0
+      webhook_notifications: {}
