@@ -1,9 +1,9 @@
 resources:
   jobs:
     simple_remote_job:
-      name: simple_remote_job
+      name: pattern_one_bronze_test_job_one
       tasks:
-        - task_key: remote_tak_on_job
+        - task_key: pattern_one_bronze_test_task_one
           email_notifications: {}
           environment_key: Default
           notebook_task:
