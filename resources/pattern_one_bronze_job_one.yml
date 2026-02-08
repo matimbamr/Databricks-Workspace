@@ -7,7 +7,7 @@ resources:
           email_notifications: {}
           environment_key: Default
           notebook_task:
-            notebook_path: /Workspace/Users/matimba.mr@gmail.com/.bundle/bundle_pattern_one/community_matimba/files/ds-databricks/Core/Bronze/bronze_company_info
+            notebook_path: /Workspace/Repos/ds-databricks/Databricks-Workspace/ds-databricks/Core/Bronze/bronze_company_info
             source: WORKSPACE
           run_if: ALL_SUCCESS
           timeout_seconds: 0

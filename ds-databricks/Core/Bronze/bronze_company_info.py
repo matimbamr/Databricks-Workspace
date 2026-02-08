@@ -72,5 +72,4 @@ df_tables = spark.sql("SHOW TABLES IN people_data_labs_free_company_dataset.free
 # MAGIC AND country='united states'
 # MAGIC AND founded is not null
 # MAGIC AND size = '10001+' 
-# MAGIC ORDER BY founded DESC;] 
-#Another test
+# MAGIC ORDER BY founded DESC;
