@@ -5,9 +5,6 @@
 bundle:
   name: bundle_pattern_one
 
-workspace:
-  root_path: /Workspace/Repos/ds-databricks/Databricks-Workspace/.bundle/${bundle.name}/my-envs/${bundle.target}
-
 include:
   - resources/*.yml
   - resources/*/*.yml
