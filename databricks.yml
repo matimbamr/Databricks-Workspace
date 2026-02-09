@@ -1,6 +1,6 @@
 # This is a Databricks asset bundle definition for Databricks Workspace.
 # The Databricks extension requires databricks.yml configuration file.
-# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation test.
 
 bundle:
   name: bundle_pattern_one.{}
