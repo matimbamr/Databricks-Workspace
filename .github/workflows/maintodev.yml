@@ -1,0 +1,36 @@
+name: main → dev Auto Promotion
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/core/**"
+      - "src/services/**"
+      - "tests/unit/**"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.sha.outputs.sha }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Capture commit SHA
+        id: sha
+        run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+
+      - name: Set up environment
+        run: |
+          echo "Setting up environment"
+
+      - name: Run unit tests
+        run: |
+          ./tests/unit/run_tests.sh
