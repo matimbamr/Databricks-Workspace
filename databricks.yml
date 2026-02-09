@@ -3,7 +3,7 @@
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 
 bundle:
-  name: bundle_pattern_one
+  name: bundle_pattern_one.{}
 
 include:
   - resources/*.yml
@@ -15,3 +15,13 @@ targets:
     default: true
     workspace:
       host: https://dbc-87ae57c1-7dd6.cloud.databricks.com
+    variables:
+      environment: preprod
+  community_matimba_preprod:
+    mode: Production
+    default: False
+    workspace:
+      host: https://dbc-87ae57c1-7dd6.cloud.databricks.com
+      root_path: /Shared/.bundle/${bundle.name}/preprod
+    variables:
+      environment: preprod
