@@ -5,9 +5,9 @@ on:
     branches:
       - main
     paths:
-      - "src/core/**"
-      - "src/services/**"
-      - "tests/unit/**"
+      - "**"
+      - "/**"
+      - "**"
 
 permissions:
   contents: write
