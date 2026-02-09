@@ -22,7 +22,8 @@ targets:
     workspace:
       host: https://dbc-87ae57c1-7dd6.cloud.databricks.com
     variables:
-      environment: preprod
+      environment: dev
+
   community_matimba_preprod:
     mode: Production
     default: False
@@ -31,3 +32,12 @@ targets:
       root_path: /Shared/.bundle/${bundle.name}/preprod
     variables:
       environment: preprod
+
+  community_matimba_prod:
+    mode: Production
+    default: False
+    workspace:
+      host: https://dbc-87ae57c1-7dd6.cloud.databricks.com
+      root_path: /Shared/.bundle/${bundle.name}/prod
+    variables:
+      environment: prod
