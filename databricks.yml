@@ -8,6 +8,12 @@ bundle:
 include:
   - resources/*.yml
   - resources/*/*.yml
+
+variables:
+  environment:
+    description: Deployment environment
+    default: dev
+    
 targets:
 
   community_matimba:
